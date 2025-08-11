@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Impact - HelpBridgeKenya</title>
+  <meta name="description" content="See how HelpBridgeKenya has transformed lives through support, education, and empowerment programs." />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6fc;
+      color: #2c2e43;
+    }
+    header {
+      background: #6a4fbf;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(106, 79, 191, 0.3);
+    }
+    header h1 {
+      color: #f0f4f8;
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+    nav a {
+      color: #f0f4f8;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #a59cff;
+    }
+    main {
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #6a4fbf;
+      font-size: 2rem;
+      border-bottom: 3px solid #a59cff;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      max-width: max-content;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #45475a;
+    }
+    .impact-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(106, 79, 191, 0.15);
+      transition: box-shadow 0.3s ease;
+    }
+    .card:hover {
+      box-shadow: 0 6px 14px rgba(106, 79, 191, 0.3);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #6a4fbf;
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+    }
+    .card p {
+      color: #555770;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: #6a4fbf;
+      color: #f0f4f8;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      box-shadow: 0 -2px 8px rgba(106, 79, 191, 0.3);
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 onclick="window.location='index.html'">HelpBridgeKenya</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="impact.html">Impact</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="impact-overview">
+    <h2>Our Impact</h2>
+    <p>Since our inception, HelpBridgeKenya has touched thousands of vulnerable lives across Kenya, providing hope, healing, and tangible support. Here are some of the highlights of what we have achieved together with our partners and supporters:</p>
+  </section>
+
+  <section class="impact-cards">
+    <div class="card">
+      <h3>5,000+ Lives Connected</h3>
+      <p>Single mothers, widows, and street children linked with NGOs offering financial aid, education, shelter, and counseling.</p>
+    </div>
+    <div class="card">
+      <h3>Education Scholarships</h3>
+      <p>Over 1,200 children sponsored with full scholarships and school supplies through our education partners.</p>
+    </div>
+    <div class="card">
+      <h3>Safe Shelter Provided</h3>
+      <p>Hundreds of street children and abused women have found safe, temporary housing thanks to our shelter programs.</p>
+    </div>
+    <div class="card">
+      <h3>Mental Health Support</h3>
+      <p>Thousands have received counseling and therapy to overcome trauma and build emotional resilience.</p>
+    </div>
+    <div class="card">
+      <h3>Community Outreach</h3>
+      <p>Regular awareness campaigns on health, human rights, and empowerment conducted in multiple Kenyan counties.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 HelpBridgeKenya. All rights reserved.
+</footer>
+
+</body>
+</html>
