@@ -58,7 +58,7 @@ For questions or suggestions, email us at **helpbridgekenya@gmail.com**.
 
 ## Contact Information
 
-- **Email:** support@helpbridge.org  
+- **Email:** support helpbridgekenya@gmail.com
 - **Phone:** +254 758 820 459  
 - **Location:** Nairobi, Kenya
 
