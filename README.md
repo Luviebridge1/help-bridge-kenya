@@ -1,26 +1,20 @@
-# Help Bridge
 
-Help Bridge is a clean, responsive, and user-friendly website designed to connect individuals in need with volunteers and support services.
+import { getStore } from "@netlify/blobs";
+import type { Context } from "@netlify/functions";
+import { v4 as uuid } from "uuid";
 
-## 🌐 Live Demo
-[https://help-bridge.netlify.app](https://help-bridge.netlify.app)
+export default async (req: Request, context: Context) => {
+  // Accessing the request as `multipart/form-data`.
+  const form = await req.formData();
+  const file = form.get("file") as File;
 
-## 📋 Features
-- **Responsive Design** – Optimized for mobile, tablet, and desktop.
-- **Contact Form** – Reach us directly via the integrated form.
-- **About Section** – Learn more about Help Bridge and our mission.
-- **Services Section** – Overview of the support we provide.
-- **Updated Contact** – Call us at **+254 758 820 459**.
+  // Generating a unique key for the entry.
+  const key = uuid();
 
-## 🚀 Deployment
-This project is deployed on [Netlify](https://www.netlify.com/).  
+  const uploads = getStore("file-uploads");
+  await uploads.set(key, file, {
+    metadata: { country: context.geo.country.name }
+  });
 
-## 📁 Tech Stack
-- **HTML5**  
-- **CSS3**  
-- **JavaScript**  
-
-## 📞 Contact
-For any inquiries, please reach us at:  
-**Email:**onyangocalleb28@gmail.com  
-**Phone:** +254 758 820 459
+  return new Response("Submission saved");
+};
