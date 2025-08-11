@@ -2,182 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>HelpBridgeKenya – Connecting Vulnerable Lives with Hope</title>
-  <meta name="description" content="HelpBridgeKenya connects single mothers, widows, and street children with NGOs and organizations offering support, empowerment, and hope." />
-  <meta name="keywords" content="help bridge kenya, NGOs Kenya, support single mothers, widows support, street children assistance, humanitarian aid Kenya" />
-  <meta name="author" content="HelpBridgeKenya" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="HelpBridgeKenya – Connecting Vulnerable Lives with Hope" />
-  <meta property="og:description" content="Connecting vulnerable groups in Kenya with NGOs and humanitarian organizations to provide support and hope." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://helpbrigekenya.netlify.app/" />
-  <meta property="og:image" content="https://helpbrigekenya.netlify.app/images/social-share.png" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HelpBridgeKenya – Connecting Vulnerable Lives with Hope" />
-  <meta name="twitter:description" content="Connecting vulnerable groups in Kenya with NGOs and humanitarian organizations to provide support and hope." />
-  <meta name="twitter:image" content="https://helpbrigekenya.netlify.app/images/social-share.png" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" />
-
+  <title>HelpBridgeKenya — Empowering Vulnerable Lives</title>
+  <meta name="description" content="HelpBridgeKenya connects vulnerable Kenyans with NGOs and support systems for a better future." />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0; background: #fefefe; color: #333;
+      margin: 0; padding: 0;
+      background: #f4f6fc;
+      color: #2c2e43;
     }
     header {
-      background: #e63946; color: white; padding: 1rem 2rem;
-      display: flex; justify-content: space-between; align-items: center;
-      position: sticky; top: 0; z-index: 1000;
+      background: #6a4fbf; /* purple */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(106, 79, 191, 0.3);
     }
-    header h1 { margin: 0; font-size: 1.8rem; }
+    header h1 {
+      color: #f0f4f8;
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
     nav a {
-      color: white; margin-left: 1.2rem; text-decoration: none;
+      color: #f0f4f8;
+      margin-left: 1.5rem;
+      text-decoration: none;
       font-weight: 600;
+      font-size: 1rem;
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #f1faee;
+      color: #a59cff;
     }
     main {
-      max-width: 900px; margin: 2rem auto; padding: 0 1rem;
+      max-width: 960px;
+      margin: 3rem auto;
+      padding: 0 1.2rem;
     }
     section {
       margin-bottom: 3rem;
     }
     h2 {
-      color: #e63946;
-      margin-bottom: 1rem;
+      color: #6a4fbf;
       font-size: 2rem;
-      border-bottom: 3px solid #e63946;
+      border-bottom: 3px solid #a59cff;
       padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
       max-width: max-content;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 1.5rem;
-    }
-    footer {
-      background: #1d3557;
-      color: white;
-      text-align: center;
-      padding: 1rem 0;
-      font-size: 0.9rem;
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #45475a;
     }
     button.primary {
-      background-color: #e63946;
+      background-color: #6a4fbf;
       border: none;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 6px;
+      color: #f0f4f8;
+      padding: 0.9rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      font-weight: 700;
       margin-top: 1rem;
+      box-shadow: 0 6px 10px rgba(106, 79, 191, 0.3);
+      transition: background-color 0.3s ease;
     }
     button.primary:hover {
-      background-color: #d62828;
+      background-color: #5741a5;
     }
-    .partner-logos img {
-      height: 40px;
-      margin: 0 1rem 1rem 0;
-      vertical-align: middle;
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: #6a4fbf;
+      color: #f0f4f8;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+      box-shadow: 0 -2px 8px rgba(106, 79, 191, 0.3);
     }
-    .testimonial {
-      background: #f1faee;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
-      font-style: italic;
-      box-shadow: 0 2px 6px rgb(230 230 230);
-    }
-    .testimonial strong {
-      display: block;
-      margin-top: 0.5rem;
-      font-style: normal;
-      color: #1d3557;
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav a {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+      }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>HelpBridgeKenya</h1>
+  <h1 onclick="window.location='index.html'">HelpBridgeKenya</h1>
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#impact">Impact</a>
-    <a href="#partners">Partners</a>
-    <a href="#get-involved">Get Involved</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="impact.html">Impact</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
-  <section id="hero" style="text-align:center; margin-bottom:3rem;">
+  <section id="hero" style="text-align:center; margin-bottom:4rem;">
     <h2>Connecting Vulnerable Lives with Hope</h2>
-    <p>HelpBridgeKenya links single mothers, widows, and street children with NGOs and organizations that provide support, funding, education, and empowerment.</p>
-    <button class="primary" onclick="window.location='#get-involved'">Get Involved</button>
+    <p>At HelpBridgeKenya, we empower single mothers, widows, and street children by linking them with NGOs, donors, and support systems offering financial aid, education, and emotional support.</p>
+    <button class="primary" onclick="window.location='contact.html'">Get Involved</button>
   </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>HelpBridgeKenya is a humanitarian initiative dedicated to empowering vulnerable groups by linking them with NGOs, donors, and support systems. We aim to create a bridge of hope, resources, and opportunity.</p>
+  <section id="mission-vision">
+    <h2>Our Mission & Vision</h2>
+    <p><strong>Mission:</strong> To bridge vulnerable individuals to dedicated NGOs and organizations that uplift and empower through financial, emotional, and educational support.</p>
+    <p><strong>Vision:</strong> A society where every vulnerable Kenyan lives with dignity, hope, and opportunity.</p>
   </section>
 
-  <section id="services">
-    <h2>What We Do</h2>
+  <section id="quick-links">
+    <h2>Explore</h2>
+    <p>Quickly jump to detailed sections:</p>
     <ul>
-      <li>Counseling & Therapy Services</li>
-      <li>Emergency Helplines & Mental Health Support</li>
-      <li>Community Outreach & Awareness</li>
-      <li>Volunteer Training & Empowerment</li>
+      <li><a href="about.html" style="color:#6a4fbf; font-weight:600;">About Us</a></li>
+      <li><a href="services.html" style="color:#6a4fbf; font-weight:600;">Our Services</a></li>
+      <li><a href="impact.html" style="color:#6a4fbf; font-weight:600;">Impact & Stories</a></li>
+      <li><a href="contact.html" style="color:#6a4fbf; font-weight:600;">Contact & Get Involved</a></li>
     </ul>
-  </section>
-
-  <section id="impact">
-    <h2>Our Impact</h2>
-    <p>Over 5,000 lives connected with aid organizations. Education scholarships, food programs, safe shelters, and emotional support made possible through HelpBridgeKenya.</p>
-  </section>
-
-  <section id="partners">
-    <h2>Our Partners</h2>
-    <div class="partner-logos">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/UNICEF_Logo.svg/2560px-UNICEF_Logo.svg.png" alt="UNICEF" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Red_Cross_logo.svg/2560px-Red_Cross_logo.svg.png" alt="Red Cross" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/World_Vision_logo.svg/2560px-World_Vision_logo.svg.png" alt="World Vision" />
-    </div>
-  </section>
-
-  <section id="get-involved">
-    <h2>Get Involved</h2>
-    <p>Join our mission. Volunteer, donate, or partner with us to transform lives and restore hope.</p>
-    <button class="primary" onclick="window.location='#contact'">Join the Movement</button>
-  </section>
-
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">"HelpBridgeKenya gave me hope. Now my children go to school and I can feed them." <strong>— Nancy, Single Mother</strong></div>
-    <div class="testimonial">"I was on the street for two years. Today, I’m a carpenter and mentor others like me." <strong>— Moses, Former Street Child</strong></div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: support@helpbridgekenya.org</p>
-    <p>Phone: +254 758 820 459</p>
-    <p>Follow us on social media or visit our outreach centers near you.</p>
   </section>
 </main>
 
 <footer>
-  <p>© 2025 HelpBridgeKenya. All rights reserved.</p>
+  © 2025 HelpBridgeKenya. All rights reserved.
 </footer>
 
 </body>
-</html>
+      </html>
