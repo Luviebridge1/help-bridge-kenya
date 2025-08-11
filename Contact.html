@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - HelpBridgeKenya</title>
+  <meta name="description" content="Get in touch with HelpBridgeKenya for support, partnership, or inquiries." />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f6fc;
+      color: #2c2e43;
+    }
+    header {
+      background: #6a4fbf;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(106, 79, 191, 0.3);
+    }
+    header h1 {
+      color: #f0f4f8;
+      font-size: 1.8rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+    nav a {
+      color: #f0f4f8;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #a59cff;
+    }
+    main {
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 0 1.2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(106, 79, 191, 0.2);
+    }
+    h2 {
+      color: #6a4fbf;
+      font-size: 2rem;
+      border-bottom: 3px solid #a59cff;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+      color: #444570;
+    }
+    input, textarea {
+      padding: 0.8rem 1rem;
+      margin-bottom: 1.2rem;
+      border: 2px solid #a59cff;
+      border-radius: 8px;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #6a4fbf;
+      box-shadow: 0 0 8px rgba(106, 79, 191, 0.4);
+    }
+    button {
+      background-color: #6a4fbf;
+      color: #f0f4f8;
+      padding: 1rem 0;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #8c6fe0;
+    }
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #555770;
+      text-align: center;
+    }
+    .contact-info p {
+      margin: 0.4rem 0;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 0;
+      background-color: #6a4fbf;
+      color: #f0f4f8;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+      box-shadow: 0 -2px 8px rgba(106, 79, 191, 0.3);
+    }
+    /* Responsive */
+    @media (max-width: 400px) {
+      main {
+        margin: 1.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 onclick="window.location='index.html'">HelpBridgeKenya</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="impact.html">Impact</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <h2>Contact Us</h2>
+  <form action="mailto:support@helpbridgekenya.org" method="POST" enctype="text/plain">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="Name" required placeholder="Enter your full name" />
+    
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="Email" required placeholder="Enter your email address" />
+    
+    <label for="message">Your Message</label>
+    <textarea id="message" name="Message" rows="5" required placeholder="Write your message here"></textarea>
+    
+    <button type="submit">Send Message</button>
+  </form>
+  
+  <div class="contact-info">
+    <p>Email: support@helpbridgekenya.org</p>
+    <p>Phone: +254 758 820 459</p>
+    <p>Location: Nairobi, Kenya</p>
+  </div>
+</main>
+
+<footer>
+  © 2025 HelpBridgeKenya. All rights reserved.
+</footer>
+
+</body>
+  </html>
