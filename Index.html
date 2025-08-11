@@ -1,267 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>HelpBridgeKenya – Empowering Vulnerable Lives</title>
-<meta name="description" content="HelpBridgeKenya connects single mothers, widows, and street children with NGOs and organizations offering support, funding, education, and empowerment." />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-<style>
-  /* Reset & base */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0; font-family: 'Inter', sans-serif; background: #fff; color: #333; line-height: 1.6;
-  }
-  a {
-    color: #be123c; text-decoration: none; transition: color 0.3s ease;
-  }
-  a:hover, a:focus {
-    color: #9f1239;
-  }
-  img {
-    max-width: 100%; height: auto;
-    display: block;
-  }
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  /* Header & Nav */
-  header {
-    background: #e11d48;
-    position: sticky; top: 0; z-index: 10000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  nav {
-    max-width: 960px; margin: 0 auto; padding: 1rem 1rem;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .nav-logo {
-    font-weight: 700; font-size: 1.5rem; color: white; user-select: none;
-  }
-  .nav-links {
-    list-style: none; margin: 0; padding: 0;
-    display: flex; gap: 1.75rem;
-  }
-  .nav-links li {
-    user-select: none;
-  }
-  .nav-links a {
-    font-weight: 600; font-size: 1rem; color: white;
-  }
+  <title>HelpBridgeKenya – Connecting Vulnerable Lives with Hope</title>
+  <meta name="description" content="HelpBridgeKenya connects single mothers, widows, and street children with NGOs and organizations offering support, empowerment, and hope." />
+  <meta name="keywords" content="help bridge kenya, NGOs Kenya, support single mothers, widows support, street children assistance, humanitarian aid Kenya" />
+  <meta name="author" content="HelpBridgeKenya" />
 
-  /* Main container */
-  main {
-    max-width: 960px;
-    margin: 2rem auto 4rem;
-    padding: 0 1rem;
-  }
-  section {
-    margin-bottom: 4rem;
-  }
-  h1, h2, h3 {
-    color: #be123c;
-    margin-bottom: 1rem;
-  }
-  h1 {
-    font-size: 2.75rem; text-align: center; font-weight: 800;
-  }
-  h2 {
-    font-size: 2rem; text-align: center; font-weight: 700;
-  }
-  h3 {
-    font-size: 1.5rem; font-weight: 700;
-  }
-  p, ul {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #444;
-  }
-  ul {
-    padding-left: 1.25rem;
-  }
-  ul li {
-    margin-bottom: 0.5rem;
-  }
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="HelpBridgeKenya – Connecting Vulnerable Lives with Hope" />
+  <meta property="og:description" content="Connecting vulnerable groups in Kenya with NGOs and humanitarian organizations to provide support and hope." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://helpbrigekenya.netlify.app/" />
+  <meta property="og:image" content="https://helpbrigekenya.netlify.app/images/social-share.png" />
 
-  /* Buttons */
-  .btn {
-    background-color: #be123c;
-    color: white;
-    padding: 0.75rem 2.25rem;
-    border: none;
-    border-radius: 9999px;
-    font-weight: 700;
-    font-size: 1.125rem;
-    cursor: pointer;
-    user-select: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    text-align: center;
-    margin: 1rem auto;
-  }
-  .btn:hover, .btn:focus {
-    background-color: #9f1239;
-  }
-  .btn-secondary {
-    background-color: #fbbf24;
-    color: #9f1239;
-  }
-  .btn-secondary:hover, .btn-secondary:focus {
-    background-color: #d99a0f;
-  }
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="HelpBridgeKenya – Connecting Vulnerable Lives with Hope" />
+  <meta name="twitter:description" content="Connecting vulnerable groups in Kenya with NGOs and humanitarian organizations to provide support and hope." />
+  <meta name="twitter:image" content="https://helpbrigekenya.netlify.app/images/social-share.png" />
 
-  /* Partners logos container */
-  .partners {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    margin-top: 1rem;
-  }
-  .partners img {
-    height: 40px;
-    filter: grayscale(80%);
-    transition: filter 0.3s ease;
-  }
-  .partners img:hover {
-    filter: none;
-  }
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
 
-  /* Testimonials */
-  blockquote {
-    border-left: 4px solid #be123c;
-    padding-left: 1rem;
-    font-style: italic;
-    color: #9f1239;
-    margin-bottom: 1rem;
-  }
-
-  /* Contact info */
-  .contact-info p {
-    margin: 0.25rem 0;
-  }
-  .contact-info a {
-    font-weight: 700;
-  }
-
-  /* Responsive */
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-      gap: 1rem;
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0; background: #fefefe; color: #333;
     }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.75rem;
-      align-items: center;
+    header {
+      background: #e63946; color: white; padding: 1rem 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      position: sticky; top: 0; z-index: 1000;
     }
-    h1 {
-      font-size: 2rem;
+    header h1 { margin: 0; font-size: 1.8rem; }
+    nav a {
+      color: white; margin-left: 1.2rem; text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #f1faee;
+    }
+    main {
+      max-width: 900px; margin: 2rem auto; padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
     }
     h2 {
-      font-size: 1.5rem;
+      color: #e63946;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-bottom: 3px solid #e63946;
+      padding-bottom: 0.3rem;
+      max-width: max-content;
     }
-  }
-</style>
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      background: #1d3557;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+    }
+    button.primary {
+      background-color: #e63946;
+      border: none;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+    }
+    button.primary:hover {
+      background-color: #d62828;
+    }
+    .partner-logos img {
+      height: 40px;
+      margin: 0 1rem 1rem 0;
+      vertical-align: middle;
+    }
+    .testimonial {
+      background: #f1faee;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+      box-shadow: 0 2px 6px rgb(230 230 230);
+    }
+    .testimonial strong {
+      display: block;
+      margin-top: 0.5rem;
+      font-style: normal;
+      color: #1d3557;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <nav aria-label="Primary Navigation">
-    <div class="nav-logo" tabindex="0">HelpBridgeKenya</div>
-    <ul class="nav-links">
-      <li><a href="#home" tabindex="0">Home</a></li>
-      <li><a href="#about" tabindex="0">About</a></li>
-      <li><a href="#programs" tabindex="0">Programs</a></li>
-      <li><a href="#impact" tabindex="0">Impact</a></li>
-      <li><a href="#partners" tabindex="0">Partners</a></li>
-      <li><a href="#get-involved" tabindex="0">Get Involved</a></li>
-      <li><a href="#testimonials" tabindex="0">Testimonials</a></li>
-      <li><a href="#contact" tabindex="0">Contact</a></li>
-    </ul>
+  <h1>HelpBridgeKenya</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#impact">Impact</a>
+    <a href="#partners">Partners</a>
+    <a href="#get-involved">Get Involved</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
-  <section id="home" aria-label="Home">
-    <h1>Empowering Vulnerable Lives</h1>
-    <p style="text-align:center; max-width: 400px; margin: 0 auto; font-weight: 700; font-size: 1.25rem;">
-      HelpBridgeKenya connects single mothers, widows, and street children with NGOs and organizations providing support, funding, education, and empowerment.
-    </p>
-    <div style="text-align:center;">
-      <button class="btn" onclick="location.href='#get-involved'">Join the Movement</button>
-      <button class="btn btn-secondary" onclick="window.open('https://your-donation-platform.org', '_blank')">Donate Now</button>
-    </div>
+  <section id="hero" style="text-align:center; margin-bottom:3rem;">
+    <h2>Connecting Vulnerable Lives with Hope</h2>
+    <p>HelpBridgeKenya links single mothers, widows, and street children with NGOs and organizations that provide support, funding, education, and empowerment.</p>
+    <button class="primary" onclick="window.location='#get-involved'">Get Involved</button>
   </section>
 
-  <section id="about" aria-label="About HelpBridgeKenya">
+  <section id="about">
     <h2>About Us</h2>
-    <p>
-      HelpBridgeKenya is a humanitarian initiative dedicated to linking vulnerable individuals—single mothers, widows, and street children—with NGOs and organizations providing financial, emotional, educational, and social support. Our mission is to create a bridge of hope, opportunity, and transformation.
-    </p>
+    <p>HelpBridgeKenya is a humanitarian initiative dedicated to empowering vulnerable groups by linking them with NGOs, donors, and support systems. We aim to create a bridge of hope, resources, and opportunity.</p>
   </section>
 
-  <section id="programs" aria-label="Our Programs">
-    <h2>Our Programs</h2>
+  <section id="services">
+    <h2>What We Do</h2>
     <ul>
-      <li><strong>Single Mothers Uplift:</strong> Vocational training, childcare, and micro-financing opportunities.</li>
-      <li><strong>Street Children Rescue:</strong> Rehabilitation centers and education sponsorship programs.</li>
-      <li><strong>Widows Empowerment:</strong> Grief counseling, income generation training, and housing solutions.</li>
+      <li>Counseling & Therapy Services</li>
+      <li>Emergency Helplines & Mental Health Support</li>
+      <li>Community Outreach & Awareness</li>
+      <li>Volunteer Training & Empowerment</li>
     </ul>
   </section>
 
-  <section id="impact" aria-label="Impact">
+  <section id="impact">
     <h2>Our Impact</h2>
     <p>Over 5,000 lives connected with aid organizations. Education scholarships, food programs, safe shelters, and emotional support made possible through HelpBridgeKenya.</p>
   </section>
 
-  <section id="partners" aria-label="Our Partners">
+  <section id="partners">
     <h2>Our Partners</h2>
-    <p>We collaborate with reputable NGOs and foundations worldwide.</p>
-    <div class="partners" role="list">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/UNICEF_logo.svg" alt="UNICEF logo" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Red_Cross_Logo.svg" alt="Red Cross logo" />
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/World_Vision_Logo.svg" alt="World Vision logo" />
+    <div class="partner-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/UNICEF_Logo.svg/2560px-UNICEF_Logo.svg.png" alt="UNICEF" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Red_Cross_logo.svg/2560px-Red_Cross_logo.svg.png" alt="Red Cross" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/World_Vision_logo.svg/2560px-World_Vision_logo.svg.png" alt="World Vision" />
     </div>
   </section>
 
-  <section id="get-involved" aria-label="Get involved">
+  <section id="get-involved">
     <h2>Get Involved</h2>
     <p>Join our mission. Volunteer, donate, or partner with us to transform lives and restore hope.</p>
-    <div style="text-align:center;">
-      <button class="btn" onclick="location.href='#contact'">Contact Us</button>
-    </div>
+    <button class="primary" onclick="window.location='#contact'">Join the Movement</button>
   </section>
 
-  <section id="testimonials" aria-label="Testimonials">
+  <section id="testimonials">
     <h2>Testimonials</h2>
-    <blockquote>
-      "HelpBridgeKenya gave me hope. Now my children go to school and I can feed them." — <strong>Nancy, Single Mother</strong>
-    </blockquote>
-    <blockquote>
-      "I was on the street for two years. Today, I’m a carpenter and mentor others like me." — <strong>Moses, Former Street Child</strong>
-    </blockquote>
+    <div class="testimonial">"HelpBridgeKenya gave me hope. Now my children go to school and I can feed them." <strong>— Nancy, Single Mother</strong></div>
+    <div class="testimonial">"I was on the street for two years. Today, I’m a carpenter and mentor others like me." <strong>— Moses, Former Street Child</strong></div>
   </section>
 
-  <section id="contact" aria-label="Contact information" class="contact-info">
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:support@helpbridgekenya.org">support@helpbridgekenya.org</a></p>
+    <p>Email: support@helpbridgekenya.org</p>
     <p>Phone: +254 758 820 459</p>
-    <p>Location: Nairobi, Kenya</p>
-    <p>
-      Follow us on social media:
-      <a href="https://facebook.com/helpbridgekenya" target="_blank" rel="noopener noreferrer">Facebook</a> |
-      <a href="https://twitter.com/helpbridgekenya" target="_blank" rel="noopener noreferrer">Twitter</a> |
-      <a href="https://instagram.com/helpbridgekenya" target="_blank" rel="noopener noreferrer">Instagram</a>
-    </p>
+    <p>Follow us on social media or visit our outreach centers near you.</p>
   </section>
 </main>
 
 <footer>
-  <p style="text-align:center; padding: 1rem; background:#f9fafb; color:#6b7280; font-size:0.9rem;">
-    &copy; 2025 HelpBridgeKenya. All rights reserved.
-  </p>
+  <p>© 2025 HelpBridgeKenya. All rights reserved.</p>
 </footer>
 
 </body>
-    </html>
+</html>
