@@ -1,45 +1,56 @@
 # HelpBridge Kenya
 
-**Website:** [helpbrigekenya.netlify.app](https://helpbrigekenya.netlify.app/)  
-**Logo:** ![HelpBridge Kenya Logo](logo.svg)
+HelpBridge Kenya is a platform dedicated to connecting donors, NGOs, and individuals in need of aid across Kenya. Our mission is to streamline the donation process, ensure transparency in how contributions are used, and provide hope where it is needed most.
 
-HelpBridge Kenya is a platform dedicated to connecting donors with individuals and organizations in need of aid.  
-We provide transparency on how donations are used and ensure they reach the intended recipients.
+## 🌟 Features
 
----
+- **Multi-page Website** – Includes Home, About Us, How Donations Are Used, Registration for Donors & NGOs, and Aid Request Pages.
+- **Transparent Donation Tracking** – Shows exactly how and where donations are channeled.
+- **MPesa Direct Payment** – Simple, direct donation method.
+- **Mobile-Friendly** – Designed to be responsive and work seamlessly on any device.
+- **SVG Logo** – High-quality and scalable.
 
-## 🌍 About Us
-HelpBridge Kenya is built to:
-- Bridge the gap between **donors** and **communities in need**.
-- Provide clear **channels for donation allocation**.
-- Enable **registration for donors, NGOs, and those in need of aid**.
-- Maintain **accountability and transparency** in all activities.
+## 📂 Pages
 
----
-
-## 📄 Pages
-1. **Home** – Introduction to our mission and current projects.
-2. **How & Where Donations Are Channelled** – Detailed breakdown of donation allocation.
-3. **Registration** – Separate forms for:
-   - Donors  
-   - NGOs  
-   - People in need of aid  
-4. **Contact** – Reach out to our support team.
-
----
+1. **Home** – Overview of our mission and quick links.
+2. **About Us** – Who we are, our vision, and our team.
+3. **How Donations Are Used** – Detailed breakdown of donation channels and impact.
+4. **Register** – Separate registration forms for:
+   - Donors
+   - NGOs
+   - Individuals in need of aid
+5. **Contact Us** – Get in touch for support or inquiries.
 
 ## 💳 Payment Method
-We currently accept **M-Pesa Send Money** donations.  
 
-📱 **PayBill/Till:** _Not applicable_  
-💸 **Send to:** **+254 758 820 459**  
-👤 **Name:** HelpBridge Kenya
+**Send Money with MPesa**
 
----
+- **Paybill / Till Number**: N/A (We use direct Send Money)  
+- **Number**: `+254758820459`  
+- **Name**: `Calleb`
 
-## 🚀 How to Deploy (For Developers)
-We use **Netlify** for hosting and deployment.  
+## 🛠 Technologies Used
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/username/helpbridge-kenya.git
+- **HTML5**, **CSS3**, **JavaScript**
+- **Netlify** for hosting and deployment
+- **SVG** for logo design
+
+## 🚀 Deployment
+
+The site is deployed and live on:  
+[https://helpbrigekenya.netlify.app/](https://helpbrigekenya.netlify.app/)
+
+To make changes:
+1. Clone the repo from GitHub.
+2. Edit files as needed.
+3. Push updates to GitHub.
+4. Netlify auto-deploys your changes.
+
+## 🤝 Contributing
+
+We welcome contributions from volunteers, NGOs, and developers.  
+Contact us at: **support@helpbridgekenya.org** (placeholder email)
+
+## 📜 License
+
+This project is open source under the MIT License.
