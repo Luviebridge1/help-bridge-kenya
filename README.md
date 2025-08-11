@@ -1,23 +1,19 @@
 # HelpBridgeKenya Website
 
-**Website:** [https://helpbrigekenya.netlify.app/](https://helpbrigekenya.netlify.app/)
+## Overview
+HelpBridgeKenya is a humanitarian website dedicated to connecting vulnerable groups—single mothers, widows, and street children—with NGOs and donors. The site features clear navigation, detailed content about the mission, services, impact stories, and contact information.
 
 ---
 
-## Description
+## Website Structure
 
-HelpBridgeKenya is a humanitarian initiative dedicated to connecting vulnerable groups — single mothers, widows, and street children — with NGOs and organizations that provide financial, emotional, educational, and social support. The website showcases the mission, programs, impact, partners, testimonials, and ways to get involved.
-
----
-
-
----
-
-## Contact Information
-
-- Email: support@helpbridgekenya.org  
-- Phone: +254 758 820 459
+| Page         | Purpose                                  | Filename      |
+|--------------|------------------------------------------|---------------|
+| Home         | Introduction, mission, vision, and overview | index.html    |
+| About        | Detailed background and goals            | about.html    |
+| Services     | List of programs and support offered     | services.html |
+| Impact       | Stories and impact metrics                | impact.html   |
+| Contact      | Contact details and ways to get involved | contact.html  |
 
 ---
 
-© 2025 HelpBridgeKenya. All rights reserved.
