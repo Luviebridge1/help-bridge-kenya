@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/#about</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/#services</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/#impact</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/#partners</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/#get-involved</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://helpbrigekenya.netlify.app/#contact</loc>
+    <priority>0.80</priority>
+  </url>
+</urlset>
