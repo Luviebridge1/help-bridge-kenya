@@ -1,29 +1,20 @@
-# Help Bridge
+# HelpBridgeKenya Website
 
-Help Bridge is a clean, responsive, and user-friendly website designed to connect individuals in need with volunteers and support services.
+**Website:** [https://helpbrigekenya.netlify.app/](https://helpbrigekenya.netlify.app/)
 
-![Help Bridge Preview](screenshot.png)
+---
 
-## 🌐 Live Demo
-[https://helpbrigekenya.netlify.app/](https://helpbrigekenya.netlify.app/)
+## Description
 
-## 📋 Features
-- **Responsive Design** – Optimized for mobile, tablet, and desktop.
-- **Contact Form** – Reach us directly via the integrated form.
-- **About Section** – Learn more about Help Bridge and our mission.
-- **Services Section** – Overview of the support we provide.
-- **Updated Contact** – Call us at **+254 758 820 459**.
-
-## 🚀 Deployment
-This project is deployed on [Netlify](https://www.netlify.com/).  
+HelpBridgeKenya is a humanitarian initiative dedicated to connecting vulnerable groups — single mothers, widows, and street children — with NGOs and organizations that provide financial, emotional, educational, and social support. The website showcases the mission, programs, impact, partners, testimonials, and ways to get involved.
 
 
-## 📁 Tech Stack
-- **HTML5**  
-- **CSS3**  
-- **JavaScript**  
 
-## 📞 Contact
-For any inquiries, please reach us at:  
-**Email:** your-email@example.com  
-**Phone:** +254 758 820 459
+## Contact Information
+
+- Email: support@helpbridgekenya.org  
+- Phone: +254 758 820 459
+
+---
+
+*© 2025 HelpBridgeKenya. All rights reserved.*
