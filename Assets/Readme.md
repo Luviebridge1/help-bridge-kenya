@@ -1,57 +1,38 @@
-## Live Site  
-[HelpBridge Live](https://helpbrigekenya.netlify.app/)# HelpBridge Kenya
 
-HelpBridge Kenya is a platform dedicated to connecting donors, NGOs, and individuals in need of aid across Kenya. Our mission is to streamline the donation process, ensure transparency in how contributions are used, and provide hope where it is needed most.
+## # Help Bridge Kenya
 
-## 🌟 Features
+Help Bridge Kenya is a platform dedicated to connecting people in need with those who can help, fostering community support and assistance across Kenya.
 
-- **Multi-page Website** – Includes Home, About Us, How Donations Are Used, Registration for Donors & NGOs, and Aid Request Pages.
-- **Transparent Donation Tracking** – Shows exactly how and where donations are channeled.
-- **MPesa Direct Payment** – Simple, direct donation method.
-- **Mobile-Friendly** – Designed to be responsive and work seamlessly on any device.
-- **SVG Logo** – High-quality and scalable.
+## 🌐 Live Link
+[Visit Help Bridge Kenya](https://helpbrigekenya.netlify.app/)
 
-## 📂 Pages
+---
 
-1. **Home** – Overview of our mission and quick links.
-2. **About Us** – Who we are, our vision, and our team.
-3. **How Donations Are Used** – Detailed breakdown of donation channels and impact.
-4. **Register** – Separate registration forms for:
-   - Donors
-   - NGOs
-   - Individuals in need of aid
-5. **Contact Us** – Get in touch for support or inquiries.
+## 📞 Contact & Support
 
-## 💳 Payment Method
+- **Email:** helpbridgekenya@gmail.com  
+- **Phone/M-Pesa:** +254758820459  
+- **M-Pesa Name:** Calleb  
 
-**Send Money with MPesa**
+If you would like to support our mission, you can send your contributions via M-Pesa to the number above.
 
-- **Paybill / Till Number**: N/A (We use direct Send Money)  
-- **Number**: `+254758820459`  
-- **Name**: `Calleb`
+---
 
-## 🛠 Technologies Used
+## 🤝 Contributions
 
-- **HTML5**, **CSS3**, **JavaScript**
-- **Netlify** for hosting and deployment
-- **SVG** for logo design
+We welcome contributions from developers, designers, and community members.  
+To contribute:
+1. Fork this repository.
+2. Create a new branch: `git checkout -b feature-name`.
+3. Make your changes.
+4. Commit your changes: `git commit -m 'Add new feature'`.
+5. Push to the branch: `git push origin feature-name`.
+6. Submit a pull request.
 
-## 🚀 Deployment
+For questions or suggestions, email us at **helpbridgekenya@gmail.com**.
 
-The site is deployed and live on:  
-[https://helpbrigekenya.netlify.app/](https://helpbrigekenya.netlify.app/)
-
-To make changes:
-1. Clone the repo from GitHub.
-2. Edit files as needed.
-3. Push updates to GitHub.
-4. Netlify auto-deploys your changes.
-
-## 🤝 Contributing
-
-We welcome contributions from volunteers, NGOs, and developers.  
-Contact us at: **support@helpbridgekenya.org** (placeholder email)
+---
 
 ## 📜 License
 
-This project is open source under the MIT License.
+This project is licensed under the **MIT License** — you are free to use, modify, and distribute it, provided proper attribution is given.
