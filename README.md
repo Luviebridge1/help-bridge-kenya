@@ -48,25 +48,25 @@ To contribute:
 For questions or suggestions, email us at **helpbridgekenya@gmail.com**.
 
 
-## Contact Information
-# HelpBridge Kenya 🌍
 
-**Website:** [https://helpbridgekenya.com](https://helpbridgekenya.com)
 
-HelpBridge Kenya is a non-profit initiative dedicated to empowering communities, bridging resource gaps, and fostering sustainable development across Kenya.
+HelpBridgeKenya is a community-driven platform dedicated to bridging gaps in support, resources, and opportunities for individuals in need across Kenya.
 
-## 🚀 Live Website
-Visit our live site: [https://helpbridgekenya.com](https://helpbridgekenya.com)
+## Live Website
+[Visit HelpBridgeKenya](https://helpbridgekenya.netlify.app)
 
-## 📌 Mission
-To connect communities with opportunities, resources, and support for a better and more 
+## Features
+- User-friendly interface
+- Responsive design for all devices
+- Community-driven content
+- Fast and secure
 
-## 📬 Contact
-Email: **info@helpbridgekenya.com**
-
----
-
-© 2025 HelpBridge Kenya. All rights reserved.
+## Deployment
+This site is deployed on **Netlify**.  
+If you wish to run it locally:
+1. Clone this repository  
+   ```bash
+   git clone https://github.com/yourusername/helpbridgekenya.git
 
 - **Email:** support helpbridgekenya@gmail.com
 - **Phone:** +254 758 820 459  
