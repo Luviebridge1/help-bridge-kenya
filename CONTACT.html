@@ -52,4 +52,147 @@
     </div>
   </footer>
 </body>
-</html>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - HelpBridgeKenya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0; padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007BFF;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+    button.submit-btn {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 15px;
+      width: 100%;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button.submit-btn:hover {
+      background: #0056b3;
+    }
+    .contact-info {
+      margin-top: 30px;
+      font-size: 1rem;
+    }
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    .social-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #007BFF;
+      font-size: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .social-links a:hover {
+      color: #0056b3;
+    }
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      margin-top: 30px;
+      border-radius: 8px;
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
+  <!-- For icons, include Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <form id="contact-form" action="#" method="POST" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +254 700 000 000</p>
+      <p><strong>Email:</strong> info@helpbridgekenya.org</p>
+      <p><strong>Address:</strong> Nairobi, Kenya</p>
+    </div>
+
+    <div class="social-links" aria-label="Social Media Links">
+      <a href="https://facebook.com/helpbridgekenya" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com/helpbridgekenya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com/helpbridgekenya" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.068815756939!2d36.82194661508687!3d-1.2920653990000454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a2df1e6a3b%3A0x5ec7b2b2ab6a3681!2sNairobi%20City!5e0!3m2!1sen!2ske!4v1691771739490!5m2!1sen!2ske"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      aria-label="Google Map of Nairobi, Kenya"
+    ></iframe>
+  </div>
+
+  <script>
+    // Simple form validation
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      const name = this['name'].value.trim();
+      const email = this['email'].value.trim();
+      const message = this['message'].value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        e.preventDefault();
+        return;
