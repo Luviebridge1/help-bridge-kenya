@@ -60,7 +60,186 @@
     <section class="card" id="donation-form" style="margin-top:18px">
       <h3 class="section-title">Other donation options</h3>
       <p class="small">Bank transfer or PayPal details can be added here. For now we recommend donors use M-Pesa Send Money for fast, local transfers.</p>
-    </section>
+    </section><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate - HelpBridgeKenya</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0; padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #007BFF;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p.description {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #555;
+    }
+    form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    .donation-amounts {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .donation-amounts button {
+      flex: 1;
+      margin: 0 5px;
+      padding: 10px 0;
+      border: 1px solid #007BFF;
+      background: white;
+      color: #007BFF;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .donation-amounts button.selected,
+    .donation-amounts button:hover {
+      background: #007BFF;
+      color: white;
+    }
+    .recurring-option {
+      margin-bottom: 20px;
+    }
+    button.submit-btn {
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 15px;
+      width: 100%;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button.submit-btn:hover {
+      background: #0056b3;
+    }
+    /* Responsive */
+    @media (max-width: 480px) {
+      .donation-amounts {
+        flex-direction: column;
+      }
+      .donation-amounts button {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Support HelpBridgeKenya</h1>
+    <p class="description">Your donation helps us connect communities with vital resources and opportunities. Thank you for your generosity!</p>
+
+    <form id="donation-form" action="#" method="POST" novalidate>
+      <label for="donor-name">Full Name</label>
+      <input type="text" id="donor-name" name="donor-name" placeholder="Your full name" required />
+
+      <label for="donor-email">Email Address</label>
+      <input type="email" id="donor-email" name="donor-email" placeholder="you@example.com" required />
+
+      <label>Donation Amount</label>
+      <div class="donation-amounts" role="group" aria-label="Select donation amount">
+        <button type="button" class="amount-btn" data-amount="10">$10</button>
+        <button type="button" class="amount-btn" data-amount="25">$25</button>
+        <button type="button" class="amount-btn" data-amount="50">$50</button>
+        <button type="button" class="amount-btn" data-amount="100">$100</button>
+      </div>
+      <input type="text" id="custom-amount" name="custom-amount" placeholder="Or enter custom amount" pattern="^\d+(\.\d{1,2})?$" />
+
+      <div class="recurring-option">
+        <input type="checkbox" id="recurring" name="recurring" />
+        <label for="recurring">Make this a monthly recurring donation</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Donate Now</button>
+    </form>
+  </div>
+
+  <script>
+    // Donation amount buttons behavior
+    const amountButtons = document.querySelectorAll('.amount-btn');
+    const customAmountInput = document.getElementById('custom-amount');
+
+    amountButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove selected class from all buttons
+        amountButtons.forEach(b => b.classList.remove('selected'));
+        // Add selected class to clicked button
+        btn.classList.add('selected');
+        // Clear custom amount input
+        customAmountInput.value = '';
+      });
+    });
+
+    customAmountInput.addEventListener('input', () => {
+      amountButtons.forEach(b => b.classList.remove('selected'));
+    });
+
+    // Simple form validation on submit
+    document.getElementById('donation-form').addEventListener('submit', function(e) {
+      const name = this['donor-name'].value.trim();
+      const email = this['donor-email'].value.trim();
+      const selectedAmountBtn = document.querySelector('.amount-btn.selected');
+      const customAmount = customAmountInput.value.trim();
+      let amount = null;
+
+      if (!name || !email) {
+        alert('Please fill in your name and email.');
+        e.preventDefault();
+        return;
+      }
+
+      if (selectedAmountBtn) {
+        amount = selectedAmountBtn.dataset.amount;
+      } else if (customAmount && /^\d+(\.\d{1,2})?$/.test(customAmount)) {
+        amount = customAmount;
+      } else {
+        alert('Please select or enter a valid donation amount.');
+        e.preventDefault();
+        return;
+      }
+
+      // Here you would typically send the form data to your server/payment gateway
+      alert(`Thank you, ${name}! You are donating $${amount}${this.recurring.checked ? ' monthly.' : '.'}`);
+      e.preventDefault(); // Remove this line when you connect to backend/payment
+    });
+  </script>
+</body>
+                                                                                                                                              </html>
   </main>
 
   <footer class="footer">
