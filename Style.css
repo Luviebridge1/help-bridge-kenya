@@ -31,3 +31,154 @@ body{font-family: "Segoe UI", Roboto, Arial, sans-serif; margin:0; color:#111; b
 input,textarea,select{width:100%; padding:10px; border-radius:6px; border:1px solid #ddd}
 .small{font-size:14px; color:var(--muted)}
 .note{font-size:13px; color:var(--muted); margin-top:8px}
+/* Base Reset & Typography */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+/* Container centers content and adds padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 40px;
+  padding: 0 10px;
+}
+
+/* Headings spacing */
+h1, h2 {
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn-primary {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Navigation container */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 6px 8px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
+/* Logo styling */
+#site-logo {
+  max-height: 60px;
+  width: auto;
+  display: block;
+}
+
+/* Testimonials section */
+#testimonials {
+  background-color: #e9f2ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+#testimonials blockquote {
+  margin: 0 0 20px 0;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #007BFF;
+  padding-left: 15px;
+}
+
+#testimonials footer {
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin: 10px 0 0 0;
+  }
+
+  section {
+    margin-bottom: 30px;
+    padding: 0 5px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+        }
