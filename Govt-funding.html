@@ -3,61 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Government Funding - HelpBridgeKenya</title>
+  <title>Government Funding | HelpBridgeKenya</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f9faff;
-      margin: 0; padding: 20px;
+      background: #f9f9f9;
+      margin: 0; padding: 0;
       color: #333;
       line-height: 1.6;
     }
     .container {
-      max-width: 700px;
+      max-width: 900px;
       margin: 40px auto;
-      background: white;
-      padding: 30px 40px;
+      background: #fff;
+      padding: 30px 20px;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h1 {
-      color: #007BFF;
-      margin-bottom: 20px;
+      color: #0056b3;
       text-align: center;
+      margin-bottom: 25px;
     }
     p {
-      font-size: 1.1rem;
+      font-size: 18px;
       margin-bottom: 20px;
     }
-    a.contact-link {
+    ul {
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    a.button {
       display: inline-block;
-      background: #007BFF;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 6px;
+      background: #0056b3;
+      color: #fff;
+      padding: 12px 20px;
       text-decoration: none;
+      border-radius: 5px;
       font-weight: bold;
+      margin-top: 20px;
       transition: background 0.3s ease;
     }
-    a.contact-link:hover {
-      background: #0056b3;
+    a.button:hover {
+      background: #003f7d;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main class="container">
     <h1>Government Funding Opportunities</h1>
     <p>
-      HelpBridgeKenya is committed to partnering with government agencies to expand our impact and serve communities better.
+      HelpBridgeKenya actively seeks partnerships and funding opportunities with government agencies to support our community empowerment programs. Collaborating with government bodies helps us amplify our impact in education, health, and social welfare.
     </p>
     <p>
-      We welcome collaboration through grants, funding programs, and joint initiatives. Our work aligns with government priorities in education, health, and community development.
-    </p>
-    <p>
-      If your government agency or department is interested in funding or partnership opportunities, please reach out to us.
+      If you represent a government institution interested in funding or collaborating with HelpBridgeKenya, please review the following information:
     </p>
 
-    <a class="contact-link" href="mailto:helpbridgekenya@gmail.com?subject=Government Funding Inquiry">Contact Us for Funding</a>
-  </div>
+    <ul>
+      <li><strong>Application Process:</strong> Submit formal proposals outlining project scope, goals, and budget.</li>
+      <li><strong>Eligibility:</strong> Government departments and agencies aligned with our mission.</li>
+      <li><strong>Reporting:</strong> Regular progress reports and financial accountability are required.</li>
+      <li><strong>Contact:</strong> For inquiries and proposal submissions, reach out via the <a href="contact.html">Contact page</a>.</li>
+    </ul>
+
+    <p>
+      We welcome the opportunity to collaborate and drive meaningful change together.
+    </p>
+
+    <a href="contact.html" class="button" aria-label="Go to Contact Page">Contact Us</a>
+  </main>
+
 </body>
-  </html>
+</html>
