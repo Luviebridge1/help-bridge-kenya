@@ -61,7 +61,140 @@
   <footer class="footer">
     <div class="container">
       <p>© 2025 HelpBridge Kenya — Founded by Luvie Kings</p>
-      <p>Registered Non-Profit | Transparency &amp; Accountability First</p>
+      <p>Registered Non-Profit | Transparency &amp; Accountability First</p><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Register - HelpBridgeKenya</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0; padding: 0;
+    color: #333;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  input, select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  button.submit-btn {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button.submit-btn:hover {
+    background: #0056b3;
+  }
+  /* Progress Bar */
+  .progress-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+  .progress {
+    height: 100%;
+    width: 0%;
+    background: #007BFF;
+    transition: width 0.4s ease;
+  }
+  /* Responsive */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container" role="main" aria-labelledby="register-title">
+    <h1 id="register-title">Join HelpBridgeKenya</h1>
+
+    <div class="progress-bar" aria-label="Registration progress">
+      <div class="progress" id="progress" style="width: 0%;"></div>
+    </div>
+
+    <form id="register-form" novalidate>
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+254 700 000 000" required pattern="^\+?\d{7,15}$" />
+
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+        <option value="other">Other</option>
+        <option value="prefer-not">Prefer not to say</option>
+      </select>
+
+      <button type="submit" class="submit-btn" aria-live="polite">Register Now</button>
+    </form>
+  </div>
+
+<script>
+  // Simple progress bar animation for demo (since only one step)
+  const progress = document.getElementById('progress');
+  window.onload = () => {
+    progress.style.width = '100%';
+  };
+
+  // Simple form validation on submit
+  const form = document.getElementById('register-form');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (!form.checkValidity()) {
+      alert('Please fill in all fields correctly.');
+      return;
+    }
+
+    // You can replace this alert with your form submission logic (e.g., API call)
+    alert(`Thank you, ${form.fullname.value}! Your registration is received.`);
+    form.reset();
+    progress.style.width = '0%'; // reset progress bar
+  });
+</script>
+</body>
+  </html>
     </div>
   </footer>
 </body>
