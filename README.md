@@ -4,15 +4,7 @@
 
 HelpBridgeKenya is a humanitarian initiative dedicated to connecting vulnerable individuals — including single mothers, widows, and street children — with NGOs, donors, and organizations offering emotional, financial, educational, and social support.
 
----
 
-## Live Website
-
-Visit the fully deployed website here:
-
-👉 [https://helpbrigekenya.netlify.app/](https://helpbrigekenya.netlify.app/)
-
----
 
 ## Features
 
@@ -57,6 +49,24 @@ For questions or suggestions, email us at **helpbridgekenya@gmail.com**.
 
 
 ## Contact Information
+# HelpBridge Kenya 🌍
+
+**Website:** [https://helpbridgekenya.com](https://helpbridgekenya.com)
+
+HelpBridge Kenya is a non-profit initiative dedicated to empowering communities, bridging resource gaps, and fostering sustainable development across Kenya.
+
+## 🚀 Live Website
+Visit our live site: [https://helpbridgekenya.com](https://helpbridgekenya.com)
+
+## 📌 Mission
+To connect communities with opportunities, resources, and support for a better and more 
+
+## 📬 Contact
+Email: **info@helpbridgekenya.com**
+
+---
+
+© 2025 HelpBridge Kenya. All rights reserved.
 
 - **Email:** support helpbridgekenya@gmail.com
 - **Phone:** +254 758 820 459  
