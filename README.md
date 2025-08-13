@@ -1,32 +1,22 @@
-# HelpBridge Kenya 🌍
+# Help Bridge Kenya
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Now-brightgreen)](https://helpbridgekenya.com)
+Welcome to **Help Bridge Kenya** — a platform dedicated to # Help Bridge Kenya
 
-**HelpBridge Kenya** is a community-driven platform dedicated to connecting people in need with those who can help.  
-Our mission is to bridge the gap between generosity and need, making it easy for individuals and organizations to contribute to meaningful causes in Kenya.
+Welcome to **Help Bridge Kenya** — a platform dedicated to connecting donors with meaningful projects and providing resources for communities in need.
 
----
-
-## 🌐 Live Website
-🔗 **[Visit HelpBridge Kenya](https://helpbridgekenya.com)**
+This repository contains the full source code for the Help Bridge website, including all HTML, CSS, JS, and asset files.
 
 ---
 
-## 📌 Features
-- 📢 **Community Announcements** – Share and discover opportunities to help.
-- 📍 **Local Impact** – Connect donors directly with verified needs.
-- 💳 **Secure Donations** – Support causes transparently.
-- 📷 **Media & Stories** – See the real-world difference being made.
+## 🚀 Live Website
+
+The website is deployed on Netlify and can be accessed here:  
+[**https://helpbridge-kenya.netlify.app/**](https://helpbridge-kenya.netlify.app/)
+
+> If you are using a custom domain, ensure your DNS records point to Netlify’s servers. More info: [Netlify Domains](https://docs.netlify.com/domains-https/).
 
 ---
 
-## 📂 Project Structure
-```plaintext
-.
-├── index.html
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── README.md
+## 📁 File Structure
+
 └── LICENSE
