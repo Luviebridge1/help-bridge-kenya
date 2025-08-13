@@ -1,38 +1,32 @@
+# HelpBridge Kenya 🌍
 
-## # Help Bridge Kenya
+[![Live Site](https://img.shields.io/badge/Live%20Site-Visit%20Now-brightgreen)](https://helpbridgekenya.com)
 
-Help Bridge Kenya is a platform dedicated to connecting people in need with those who can help, fostering community support and assistance across Kenya.
-
-## 🌐 Live Link
-[Visit Help Bridge Kenya](https://helpbrigekenya.netlify.app/)
-
----
-
-## 📞 Contact & Support
-
-- **Email:** helpbridgekenya@gmail.com  
-- **Phone/M-Pesa:** +254758820459  
-- **M-Pesa Name:** Calleb  
-
-If you would like to support our mission, you can send your contributions via M-Pesa to the number above.
+**HelpBridge Kenya** is a community-driven platform dedicated to connecting people in need with those who can help.  
+Our mission is to bridge the gap between generosity and need, making it easy for individuals and organizations to contribute to meaningful causes in Kenya.
 
 ---
 
-## 🤝 Contributions
-
-We welcome contributions from developers, designers, and community members.  
-To contribute:
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature-name`.
-3. Make your changes.
-4. Commit your changes: `git commit -m 'Add new feature'`.
-5. Push to the branch: `git push origin feature-name`.
-6. Submit a pull request.
-
-For questions or suggestions, email us at **helpbridgekenya@gmail.com**.
+## 🌐 Live Website
+🔗 **[Visit HelpBridge Kenya](https://helpbridgekenya.com)**
 
 ---
 
-## 📜 License
+## 📌 Features
+- 📢 **Community Announcements** – Share and discover opportunities to help.
+- 📍 **Local Impact** – Connect donors directly with verified needs.
+- 💳 **Secure Donations** – Support causes transparently.
+- 📷 **Media & Stories** – See the real-world difference being made.
 
-This project is licensed under the **MIT License** — you are free to use, modify, and distribute it, provided proper attribution is given.
+---
+
+## 📂 Project Structure
+```plaintext
+.
+├── index.html
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── README.md
+└── LICENSE
